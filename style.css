@@ -1,0 +1,117 @@
+/* common css */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header css */
+header {
+  background: #3c4c6ac5;
+}
+
+.inner_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_area {
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+  line-height: 2;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 21px;
+  position: relative;
+}
+nav ul li a {
+  transition: 0.3s;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+nav ul li:hover a {
+  color: orange;
+}
+
+nav ul li:hover ul a {
+  color: white;
+}
+
+/* dropdown css */
+nav ul ul {
+  flex-direction: column;
+  position: absolute;
+  
+  background: black;
+  left: -999999px;
+  top: 58px;
+  width: 150px;
+  padding: 10px 0;
+}
+
+nav ul li:hover ul {
+  left: 0;
+}
+
+nav ul li:hover ul ul {
+  left: -999999px;
+}
+
+nav ul ul li {
+  padding: 5px 15px;
+}
+nav ul ul li:hover {
+  background: rgba(255, 0, 0, 0.911);
+}
+
+nav ul ul ul {
+  left: -999999px;
+  top: 0;
+}
+
+nav ul ul li:hover ul {
+  left: 150px;
+  top: 0;
+}
+
+nav ul ul li:hover ul ul {
+  left: -999999px;
+  top: 0;
+}
+nav ul ul ul li:hover ul {
+  left: 150px;
+  top: 0;
+}
